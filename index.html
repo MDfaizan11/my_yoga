@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css" />
   </head>
   <body>
     <nav
@@ -86,6 +87,21 @@
     </nav>
     <!-- END nav -->
 
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="https://via.placeholder.com/800x400" alt="Slide 1" />
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/800x400" alt="Slide 2" />
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/800x400" alt="Slide 3" />
+        </div>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
     <!-- <section class="home-slider js-fullheight owl-carousel">
       <div
         class="slider-item js-fullheight"
@@ -863,6 +879,20 @@
       data-use-service-core
       defer
     ></script>
+
     <script src="js/Review.js"></script>
+
+    <script>
+      let currentSlide = 0;
+
+      function changeSlide(direction) {
+        const slides = document.querySelectorAll(".slide");
+        currentSlide =
+          (currentSlide + direction + slides.length) % slides.length;
+        document.querySelector(".slides").style.transform = `translateX(-${
+          currentSlide * 100
+        }%)`;
+      }
+    </script>
   </body>
 </html>
