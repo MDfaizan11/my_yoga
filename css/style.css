@@ -101,7 +101,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -4420,6 +4420,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  /* text-decoration: none; */
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -4436,6 +4437,7 @@ input[type="button"].btn-block {
 }
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  list-style: none;
 }
 .nav-tabs .nav-link {
   border: 1px solid transparent;
@@ -10349,6 +10351,14 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
 }
 
 @media (min-width: 576px) {
@@ -10696,7 +10706,8 @@ h5,
 } */
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #000 !important;
+    /* background: #000 !important; */
+    background-color: white;
     position: relative;
     top: 0;
     padding: 10px 15px;
@@ -10743,8 +10754,8 @@ h5,
   top: 50%;
   left: 0;
   content: "";
-  width: 3px;
-  height: 3px;
+  /* width: 3px;
+  height: 3px; */
   background: #2c396b;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -10765,7 +10776,8 @@ h5,
     padding-right: 0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: black;
   }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
     color: #fff;
@@ -10839,7 +10851,8 @@ h5,
 }
 .ftco-navbar-light .navbar-toggler {
   border: none;
-  color: rgba(255, 255, 255, 0.5) !important;
+  /* color: rgba(255, 255, 255, 0.5) !important; */
+  color: black;
   cursor: pointer;
   padding-right: 0;
   text-transform: uppercase;
