@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   hideAnchorTag();
 });
 
-// ****************
-
 function hideToolbar() {
   var toolbar = document.querySelector(".eapps-widget-toolbar");
   if (toolbar) {

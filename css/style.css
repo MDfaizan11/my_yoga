@@ -587,20 +587,36 @@ pre code {
   .container {
     max-width: 540px;
   }
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .logo {
+    width: 150px;
+    height: 100px;
   }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+  .logo {
+    width: 150px;
+    height: 100px;
   }
 }
 
@@ -10357,7 +10373,7 @@ button.bg-dark:focus {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   height: 100px;
 }
 
